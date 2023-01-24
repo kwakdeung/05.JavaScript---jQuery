@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>XMLHttpRequest</title>
+</head>
+<body>
+    전우치 <br>
+    <script>
+        
+        // XMLHttpRequset 객체를 생성합니다.
+        var request = new XMLHttpRequest();
+        request.open('GET', '/data.html', false);
+
+        // Ajax를 수행합니다.
+        request.send();
+
+        // alert(request.responseText);
+        // 출력합니다.
+        document.body,innerHTML += request.responseText;
+    </script>    
+</body>
+</html>
+
